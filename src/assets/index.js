@@ -1,4 +1,5 @@
 import logo from "./images/logo.png";
+import logozs from "./images/logozs.jpg";
 import bannerImg from "./images/bannerImg.jpg";
 import projectOne from "./images/projects/projectOne.jpg";
 import projectTwo from "./images/projects/projectTwo.jpg";
@@ -18,4 +19,5 @@ export {
   testimonialTwo,
   quote,
   contactImg,
+  logozs,
 };

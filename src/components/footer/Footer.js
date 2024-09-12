@@ -1,21 +1,38 @@
-import React from 'react'
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
-import {logo} from "../../assets/index"
+import React from "react";
+import { FaFacebookF, FaTwitter, FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { logozs } from "../../assets/index";
 
 const Footer = () => {
   return (
     <div className="w-full py-20 h-auto border-b-[1px] border-b-black grid grid-cols-1 md:grid-cols-2 lgl:grid-cols-4 gap-8">
       <div className="w-full h-full flex flex-col gap-8">
-        <img className="w-32" src={logo} alt="logo" />
+        <h3 className="text-xl uppercase text-white/60 tracking-wider">
+          Zulqarnain Sarwar
+        </h3>
+        {/* <img className="w-32" src={logozs} alt="logo" /> */}
         <div className="flex gap-4">
           <span className="bannerIcon">
-            <FaFacebookF />
+            <a
+              href="https://www.facebook.com/share/WkReBNpr6Shoj2pu/?mibextid=qi2Omg"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bannerIcon"
+            >
+              <FaFacebookF />
+            </a>
           </span>
           <span className="bannerIcon">
-            <FaTwitter />
+            <a href="https://github.com/zulqarnainsarwar" target="_blank">
+              <FaGithub />
+            </a>
           </span>
           <span className="bannerIcon">
-            <FaLinkedinIn />
+            <a
+              href="https://www.linkedin.com/in/zulqarnainsarwar/"
+              target="_blank"
+            >
+              <FaLinkedinIn />
+            </a>
           </span>
         </div>
       </div>
@@ -132,6 +149,6 @@ const Footer = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Footer
+export default Footer;

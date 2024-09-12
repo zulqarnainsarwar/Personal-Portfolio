@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 import { AiFillAppstore } from "react-icons/ai";
 import { FaMobile, FaGlobe } from "react-icons/fa";
 import { SiProgress, SiAntdesign } from "react-icons/si";
-import Title from '../layouts/Title';
-import Card from './Card';
+import Title from "../layouts/Title";
+import Card from "./Card";
 
 const Features = () => {
   return (
@@ -14,24 +14,20 @@ const Features = () => {
       <Title title="Features" des="What I Do" />
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-20">
         <Card
-          title="Business Stratagy"
-          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque soluta
-          hic consequuntur eum repellendus ad."
-         
+          title="Website Development"
+          des="I design custom websites that fit your business needs, ensuring top-notch user experiences with the latest technologies."
         />
         <Card
-          title="App Development"
-          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque soluta
-          hic consequuntur eum repellendus ad."
+          title="Dashboard Development"
+          des="I build intuitive, user-friendly dashboards with advanced data visualization and insights."
           icon={<AiFillAppstore />}
         />
         <Card
-          title="SEO Optimisation"
-          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque soluta
-          hic consequuntur eum repellendus ad."
+          title="Website Optimisation"
+          des="I enhance website performance with advanced optimization techniques for faster load times and improved user experience."
           icon={<SiProgress />}
         />
-        <Card
+        {/* <Card
           title="Mobile Development"
           des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque soluta
           hic consequuntur eum repellendus ad."
@@ -48,10 +44,10 @@ const Features = () => {
           des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque soluta
           hic consequuntur eum repellendus ad."
           icon={<FaGlobe />}
-        />
+        /> */}
       </div>
     </section>
   );
-}
+};
 
-export default Features
+export default Features;
